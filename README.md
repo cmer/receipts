@@ -110,6 +110,7 @@ You can pass the following options to generate a PDF:
     normal: Rails.root.join('app/assets/fonts/tradegothic/TradeGothic.ttf'),
   }
   ```
+* `skip_generate` - Boolean indicating if generation should be skipped during initialization. Useful if you need to manipulate the Prawn object directly before generating the document. Don't forget to run `#generate` manually - _Optional, defaults to `false`_
 
 Here's an example of where each option is displayed.
 
